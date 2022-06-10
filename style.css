@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    height: 100vh;
+    font-size: 1.6rem;
+}
+
+header .container {
+    display: flex;
+    background-color: darkslategrey;
+    height: 8rem;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    color: #ffff;
+    margin: auto;
+}
+ h2 {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+.container .dados{
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+}
+.contato a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.banner img {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-size: cover;
+}
+
+.cards {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.image img {
+    width: 20rem;
+    height: 20rem;
+}
+
+footer {
+    display: flex;
+    background-color: darkslategrey;
+    height: 6rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    color: #ffff;
+    margin: auto;   
+}
+
+@media (max-width: 712px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media ( max-width:660px) {
+    nav {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 4px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 20px;
+        margin-right: 20px;
+    }
+
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #2f4f4f;
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .menu-section.on nav .dados {
+        display: block;
+        text-align: center;
+        margin: 40px auto;
+        line-height: 6rem;
+        transition-duration: 0.5s;       
+    }
+}
