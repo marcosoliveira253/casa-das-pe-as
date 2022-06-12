@@ -32,7 +32,20 @@ header .container {
 .container .dados{
     display: flex;
     justify-content: space-around;
-    width: 450px;
+    width: auto;
+}
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.atendimento h2{
+    font-family: Arial, Helvetica, sans-serif;
 }
 .contato a {
     display: flex;
